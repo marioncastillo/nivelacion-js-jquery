@@ -1,4 +1,5 @@
 $(document).ready( function(){
-$(".js-menu").toggle();
 
+$(".js-menu").hide();
+$(".js-back").show();
 });
