@@ -1,7 +1,9 @@
 $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+
 	renderHighlightedRecipes(recipesArray);
+
 
 });
 //funcion para eliminar la flecha 
@@ -9,15 +11,23 @@ $(".js-back").toggle();
 
 //imprime nuevas recetas
 
-$(".printNews").append('<p> NUEVAS RECETAS </P> ')
+$(".printNews").append('<p> NUEVAS RECETAS </P>');
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+
+	var receta=recipesArray;
+	for(var item in recipesArray){
+		if(recipesArray == true){
+			$(".printNews").append('<div>' +recipesArray+ '</div>');
+	}
 	console.log('Recipes: ', recipesArray);
+	}
 }
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
