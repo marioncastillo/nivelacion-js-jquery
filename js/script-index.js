@@ -4,8 +4,13 @@ $(document).ready( function(){
 	renderHighlightedRecipes(recipesArray);
 
 });
-
+//funcion para eliminar la flecha 
 $(".js-back").toggle();
+
+//imprime nuevas recetas
+
+$(".printNews").append('<p> NUEVAS RECETAS </P> ')
+
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
